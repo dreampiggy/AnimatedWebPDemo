@@ -15,7 +15,8 @@ pod install
 ![](https://raw.githubusercontent.com/dreampiggy/AnimatedWebPDemo/master/ScreenShot.png)
 
 # Original animated WebP
-+ [Ball](http://7xsf4p.com1.z0.glb.clouddn.com/image/0/9e/63a17a7087e6ab1a209460b54136b.webp09e63a17a7087e6ab1a209460b54136b.webp)
++ [Cube](https://isparta.github.io/compare-webp/image/gif_webp/webp/1.webp)
 + [Banana](https://isparta.github.io/compare-webp/image/gif_webp/webp/2.webp)
++ [Ball](http://7xsf4p.com1.z0.glb.clouddn.com/image/0/9e/63a17a7087e6ab1a209460b54136b.webp)
 
 You can broswer these animated WebP images using Chrome.
