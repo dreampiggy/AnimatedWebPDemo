@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1CDE5F65758388CD135843 /* libPods-AnimatedWebPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C883ED606193A46984C79E59 /* libPods-AnimatedWebPDemo.a */; };
 		327919041F04C0C400EF3FA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 327919031F04C0C400EF3FA3 /* main.m */; };
 		327919071F04C0C400EF3FA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 327919061F04C0C400EF3FA3 /* AppDelegate.m */; };
 		3279190A1F04C0C400EF3FA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327919091F04C0C400EF3FA3 /* ViewController.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		306208F638353C99AD47D806 /* Pods-AnimatedWebPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedWebPDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatedWebPDemo/Pods-AnimatedWebPDemo.release.xcconfig"; sourceTree = "<group>"; };
 		327918FF1F04C0C400EF3FA3 /* AnimatedWebPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedWebPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		327919031F04C0C400EF3FA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		327919051F04C0C400EF3FA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		3279190E1F04C0C400EF3FA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		327919111F04C0C400EF3FA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		327919131F04C0C400EF3FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45443BF2575F27F73E81DCAB /* Pods-AnimatedWebPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedWebPDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatedWebPDemo/Pods-AnimatedWebPDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C883ED606193A46984C79E59 /* libPods-AnimatedWebPDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimatedWebPDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1CDE5F65758388CD135843 /* libPods-AnimatedWebPDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		021DBC778139D41164381C06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45443BF2575F27F73E81DCAB /* Pods-AnimatedWebPDemo.debug.xcconfig */,
+				306208F638353C99AD47D806 /* Pods-AnimatedWebPDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		327918F61F04C0C400EF3FA3 = {
 			isa = PBXGroup;
 			children = (
 				327919011F04C0C400EF3FA3 /* AnimatedWebPDemo */,
 				327919001F04C0C400EF3FA3 /* Products */,
+				021DBC778139D41164381C06 /* Pods */,
+				DA9BAE467D3105FB9A8FE8EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DA9BAE467D3105FB9A8FE8EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C883ED606193A46984C79E59 /* libPods-AnimatedWebPDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 327919161F04C0C400EF3FA3 /* Build configuration list for PBXNativeTarget "AnimatedWebPDemo" */;
 			buildPhases = (
+				DB06E793CEAEB2D3AFD8C750 /* [CP] Check Pods Manifest.lock */,
 				327918FB1F04C0C400EF3FA3 /* Sources */,
 				327918FC1F04C0C400EF3FA3 /* Frameworks */,
 				327918FD1F04C0C400EF3FA3 /* Resources */,
+				6422B34311FC393722C1B6E0 /* [CP] Embed Pods Frameworks */,
+				C918E7690C879AE650BD0715 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6422B34311FC393722C1B6E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimatedWebPDemo/Pods-AnimatedWebPDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C918E7690C879AE650BD0715 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimatedWebPDemo/Pods-AnimatedWebPDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB06E793CEAEB2D3AFD8C750 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		327918FB1F04C0C400EF3FA3 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		327919171F04C0C400EF3FA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45443BF2575F27F73E81DCAB /* Pods-AnimatedWebPDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnimatedWebPDemo/Info.plist;
@@ -283,6 +359,7 @@
 		};
 		327919181F04C0C400EF3FA3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 306208F638353C99AD47D806 /* Pods-AnimatedWebPDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnimatedWebPDemo/Info.plist;
