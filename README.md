@@ -1,0 +1,21 @@
+# AnimatedWebPDemo
+Animated WebP Demo for iOS
+
+# Build
+```bash
+pod install
+```
+
+# Issue
+1. `SDWebImage` 4.0 can download, decode ,encode and cache animated WebP image well. But for showing animated image to UI, it relays on `FLAnimatedImageView`, which just use the `UIImageView.image` setter to show animated WebP image.
+2. `UIImageView` does not support animated WebP correctly.
+3. `YYWebImage` provide an abstract layer to `UIImage` to hold each frame's sprite sheet. And `YYAnimatedImageView` support animated WebP correctly.
+
+# Screenshot
+![](https://raw.githubusercontent.com/dreampiggy/AnimatedWebPDemo/master/ScreenShot.png)
+
+# Original animated WebP
++ [Ball](http://7xsf4p.com1.z0.glb.clouddn.com/image/0/9e/63a17a7087e6ab1a209460b54136b.webp09e63a17a7087e6ab1a209460b54136b.webp)
++ [Banana](https://isparta.github.io/compare-webp/image/gif_webp/webp/2.webp)
+
+You can broswer these animated WebP images using Chrome.
