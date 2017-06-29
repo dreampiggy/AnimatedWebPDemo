@@ -133,6 +133,9 @@ static void FreeImageData(void *info, const void *data, size_t size) {
     CGFloat tmpX = iter.x_offset;
     CGFloat tmpY = size.height - iter.height - iter.y_offset;
     CGRect imageRect = CGRectMake(tmpX, tmpY, iter.width, iter.height);
+    if (CGRectEqualToRect(imageRect, CGRectMake(0, 0, canvasWidth, canvasHeight))) {
+        return image;
+    }
     
     CGColorSpaceRef colorSpaceRef = sd_CGColorSpaceGetDeviceRGB();
     uint32_t bitmapInfo = kCGBitmapByteOrder32Big | kCGImageAlphaPremultipliedLast;
