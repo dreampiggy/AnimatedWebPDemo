@@ -60,7 +60,7 @@ static void FreeImageData(void *info, const void *data, size_t size) {
     do {
         UIImage *image;
         if (iter.blend_method == WEBP_MUX_BLEND) {
-            image = [self sd_blendWebpImageWithOriginImage:images.lastObject canvas:(CGContextRef)canvas iterator:iter];
+            image = [self sd_blendWebpImageWithCanvas:canvas iterator:iter];
         } else {
             image = [self sd_nonblendWebpImageWithCanvas:canvas iterator:iter];
         }
@@ -90,11 +90,7 @@ static void FreeImageData(void *info, const void *data, size_t size) {
 }
 
 
-+ (nullable UIImage *)sd_blendWebpImageWithOriginImage:(nullable UIImage *)originImage canvas:(CGContextRef)canvas iterator:(WebPIterator)iter {
-    if (!originImage) {
-        return nil;
-    }
-    
++ (nullable UIImage *)sd_blendWebpImageWithCanvas:(CGContextRef)canvas iterator:(WebPIterator)iter {
     UIImage *image = [self sd_rawWebpImageWithData:iter.fragment];
     if (!image) {
         return nil;
@@ -107,7 +103,6 @@ static void FreeImageData(void *info, const void *data, size_t size) {
     CGFloat tmpY = size.height - iter.height - iter.y_offset;
     CGRect imageRect = CGRectMake(tmpX, tmpY, iter.width, iter.height);
     
-    CGContextDrawImage(canvas, CGRectMake(0, 0, size.width, size.height), originImage.CGImage);
     CGContextDrawImage(canvas, imageRect, image.CGImage);
     CGImageRef newImageRef = CGBitmapContextCreateImage(canvas);
     
@@ -141,6 +136,7 @@ static void FreeImageData(void *info, const void *data, size_t size) {
     CGFloat tmpY = size.height - iter.height - iter.y_offset;
     CGRect imageRect = CGRectMake(tmpX, tmpY, iter.width, iter.height);
     
+    CGContextClearRect(canvas, imageRect);
     CGContextDrawImage(canvas, imageRect, image.CGImage);
     CGImageRef newImageRef = CGBitmapContextCreateImage(canvas);
     
