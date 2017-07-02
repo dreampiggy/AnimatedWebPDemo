@@ -55,7 +55,13 @@ static void FreeImageData(void *info, const void *data, size_t size) {
     
     int canvasWidth = WebPDemuxGetI(demuxer, WEBP_FF_CANVAS_WIDTH);
     int canvasHeight = WebPDemuxGetI(demuxer, WEBP_FF_CANVAS_HEIGHT);
-    CGContextRef canvas = CGBitmapContextCreate(NULL, canvasWidth, canvasHeight, 8, 0, sd_CGColorSpaceGetDeviceRGB(), kCGBitmapByteOrder32Big | kCGImageAlphaPremultipliedLast);
+    CGBitmapInfo bitmapInfo;
+    if (!(flags & ALPHA_FLAG)) {
+        bitmapInfo = kCGBitmapByteOrder32Big | kCGImageAlphaNoneSkipLast;
+    } else {
+        bitmapInfo = kCGBitmapByteOrder32Big | kCGImageAlphaPremultipliedLast;
+    }
+    CGContextRef canvas = CGBitmapContextCreate(NULL, canvasWidth, canvasHeight, 8, 0, sd_CGColorSpaceGetDeviceRGB(), bitmapInfo);
     
     do {
         UIImage *image;
