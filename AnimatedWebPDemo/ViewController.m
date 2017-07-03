@@ -29,7 +29,7 @@
     
     NSURL *webpURL1 = [NSURL URLWithString:@"https://isparta.github.io/compare-webp/image/gif_webp/webp/1.webp"];
     NSURL *webpURL2 = [NSURL URLWithString:@"https://isparta.github.io/compare-webp/image/gif_webp/webp/2.webp"];
-    NSURL *webpURL3 = [NSURL URLWithString:@"http://7xsf4p.com1.z0.glb.clouddn.com/image/0/9e/63a17a7087e6ab1a209460b54136b.webp"];
+    NSURL *webpURL3 = [NSURL URLWithString:@"http://s3.pstatp.com/toutiao/static_images/authinfo/webp/2_native.webp"];
     
     // SDWebImage+FLAnimatedImageView
     FLAnimatedImageView *FLImageView1 = [[FLAnimatedImageView alloc] initWithFrame:CGRectMake(0, 0, length, length)];

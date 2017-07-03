@@ -103,7 +103,22 @@ static char TAG_ACTIVITY_SHOW;
 #if SD_UIKIT || SD_MAC
     if ([self isKindOfClass:[UIImageView class]]) {
         UIImageView *imageView = (UIImageView *)self;
+#ifdef SD_WEBP
+        if (image.images.count) {
+            imageView.image = image.images.lastObject;
+            SEL sd_webpLoopCount = NSSelectorFromString(@"sd_webpLoopCount");
+            NSNumber *value = objc_getAssociatedObject(image, sd_webpLoopCount);
+            NSInteger loopCount = value.integerValue;
+            imageView.animationDuration = image.duration;
+            imageView.animationRepeatCount = loopCount;
+            imageView.animationImages = image.images;
+            [imageView startAnimating];
+        } else {
+            imageView.image = image;
+        }
+#else
         imageView.image = image;
+#endif
     }
 #endif
     

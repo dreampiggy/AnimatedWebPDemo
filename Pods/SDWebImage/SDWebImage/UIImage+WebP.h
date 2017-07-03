@@ -14,6 +14,8 @@
 
 + (nullable UIImage *)sd_imageWithWebPData:(nullable NSData *)data;
 
+- (NSInteger)sd_webpLoopCount;
+
 @end
 
 #endif

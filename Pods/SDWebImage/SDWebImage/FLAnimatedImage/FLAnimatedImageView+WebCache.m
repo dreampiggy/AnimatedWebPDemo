@@ -57,6 +57,19 @@
                            if (imageFormat == SDImageFormatGIF) {
                                weakSelf.animatedImage = [FLAnimatedImage animatedImageWithGIFData:imageData];
                                weakSelf.image = nil;
+                           } else if (imageFormat == SDImageFormatWebP) {
+                               if (image.images.count) {
+                                   weakSelf.image = image.images.lastObject;
+                                   SEL sd_webpLoopCount = NSSelectorFromString(@"sd_webpLoopCount");
+                                   NSNumber *value = objc_getAssociatedObject(image, sd_webpLoopCount);
+                                   NSInteger loopCount = value.integerValue;
+                                   weakSelf.animationDuration = image.duration;
+                                   weakSelf.animationRepeatCount = loopCount;
+                                   weakSelf.animationImages = image.images;
+                                   [weakSelf startAnimating];
+                               } else {
+                                   weakSelf.image = image;
+                               }
                            } else {
                                weakSelf.image = image;
                                weakSelf.animatedImage = nil;

@@ -14,12 +14,20 @@
 #import "webp/demux.h"
 #import "NSImage+WebCache.h"
 
+#import "objc/runtime.h"
+
 // Callback for CGDataProviderRelease
 static void FreeImageData(void *info, const void *data, size_t size) {
     free((void *)data);
 }
 
 @implementation UIImage (WebP)
+
+- (NSInteger)sd_webpLoopCount
+{
+    NSNumber *value = objc_getAssociatedObject(self, @selector(sd_webpLoopCount));
+    return value.integerValue;
+}
 
 + (nullable UIImage *)sd_imageWithWebPData:(nullable NSData *)data {
     if (!data) {
@@ -51,6 +59,7 @@ static void FreeImageData(void *info, const void *data, size_t size) {
     }
     
     int frameCount = WebPDemuxGetI(demuxer, WEBP_FF_FRAME_COUNT);
+    int loopCount = WebPDemuxGetI(demuxer, WEBP_FF_LOOP_COUNT);
     int canvasWidth = WebPDemuxGetI(demuxer, WEBP_FF_CANVAS_WIDTH);
     int canvasHeight = WebPDemuxGetI(demuxer, WEBP_FF_CANVAS_HEIGHT);
     CGBitmapInfo bitmapInfo;
@@ -94,6 +103,7 @@ static void FreeImageData(void *info, const void *data, size_t size) {
 #if SD_UIKIT || SD_WATCH
     NSArray<UIImage *> *animatedImages = [self sd_animatedImagesWithImages:images durations:durations totalDuration:duration];
     finalImage = [UIImage animatedImageWithImages:animatedImages duration:duration / 1000.0];
+    objc_setAssociatedObject(finalImage, @selector(sd_webpLoopCount), @(loopCount), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 #elif SD_MAC
     finalImage = images.firstObject;
 #endif
