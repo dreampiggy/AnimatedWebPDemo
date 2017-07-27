@@ -12,7 +12,10 @@ pod install
 3. `YYWebImage` provide an abstract layer to `UIImage` to hold each frame's sprite sheet. And `YYAnimatedImageView` support animated WebP correctly.
 
 # Screenshot
-![](https://raw.githubusercontent.com/dreampiggy/AnimatedWebPDemo/master/ScreenShot.png)
+![](https://raw.githubusercontent.com/dreampiggy/AnimatedWebPDemo/sd\_4.0/ScreenShot.png)
+
+# Fixed branch
+Fixed Demo branch: [fix\_sd\_animated\_webp\_canvas\_size](https://github.com/dreampiggy/AnimatedWebPDemo/tree/fix_sd_animated_webp_canvas_size)
 
 # Original animated WebP
 + [Cube](https://isparta.github.io/compare-webp/image/gif_webp/webp/1.webp)
