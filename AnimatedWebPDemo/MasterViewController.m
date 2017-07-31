@@ -53,7 +53,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSArray<NSURL *> *webpURLs = [[NSBundle mainBundle] URLsForResourcesWithExtension:@"webp" subdirectory:nil];
+    NSArray<NSURL *> *webpURLs = [[NSBundle mainBundle] URLsForResourcesWithExtension:@"webp" subdirectory:@"webp"];
     self.objects = [NSMutableArray array];
     
     [self.objects addObjectsFromArray:webpURLs];

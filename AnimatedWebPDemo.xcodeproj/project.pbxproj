@@ -8,18 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A1CDE5F65758388CD135843 /* libPods-AnimatedWebPDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C883ED606193A46984C79E59 /* libPods-AnimatedWebPDemo.a */; };
-		3211AB751F2F60AD00EA0143 /* angstybloom.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3211AB681F2F60AD00EA0143 /* angstybloom.webp */; };
-		3211AB761F2F60AD00EA0143 /* BladeRunner.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3211AB691F2F60AD00EA0143 /* BladeRunner.webp */; };
-		3211AB771F2F60AD00EA0143 /* coffee.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3211AB6A1F2F60AD00EA0143 /* coffee.webp */; };
-		3211AB781F2F60AD00EA0143 /* Contact.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3211AB6B1F2F60AD00EA0143 /* Contact.webp */; };
-		3211AB791F2F60AD00EA0143 /* drivemetodrink2.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3211AB6C1F2F60AD00EA0143 /* drivemetodrink2.webp */; };
-		3211AB7A1F2F60AD00EA0143 /* GenevaDrive.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3211AB6D1F2F60AD00EA0143 /* GenevaDrive.webp */; };
-		3211AB7B1F2F60AD00EA0143 /* ppitsmyluckyday.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3211AB6E1F2F60AD00EA0143 /* ppitsmyluckyday.webp */; };
-		3211AB7C1F2F60AD00EA0143 /* SteamEngine.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3211AB6F1F2F60AD00EA0143 /* SteamEngine.webp */; };
-		3211AB7D1F2F60AD00EA0143 /* tavilol.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3211AB701F2F60AD00EA0143 /* tavilol.webp */; };
-		3211AB7E1F2F60AD00EA0143 /* twifight.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3211AB711F2F60AD00EA0143 /* twifight.webp */; };
-		3211AB7F1F2F60AD00EA0143 /* welliwashungryandwhenyoucravehands.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3211AB721F2F60AD00EA0143 /* welliwashungryandwhenyoucravehands.webp */; };
-		3211AB801F2F60AD00EA0143 /* world-cup-2014-42.webp in Resources */ = {isa = PBXBuildFile; fileRef = 3211AB731F2F60AD00EA0143 /* world-cup-2014-42.webp */; };
 		3211AB861F2F624D00EA0143 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3211AB831F2F624D00EA0143 /* DetailViewController.m */; };
 		3211AB871F2F624D00EA0143 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3211AB851F2F624D00EA0143 /* MasterViewController.m */; };
 		327919041F04C0C400EF3FA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 327919031F04C0C400EF3FA3 /* main.m */; };
@@ -27,22 +15,11 @@
 		3279190D1F04C0C400EF3FA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3279190B1F04C0C400EF3FA3 /* Main.storyboard */; };
 		3279190F1F04C0C400EF3FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3279190E1F04C0C400EF3FA3 /* Assets.xcassets */; };
 		327919121F04C0C400EF3FA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 327919101F04C0C400EF3FA3 /* LaunchScreen.storyboard */; };
+		32ED95CE1F2F7CBB0081E921 /* webp in Resources */ = {isa = PBXBuildFile; fileRef = 32ED95CD1F2F7CBB0081E921 /* webp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		306208F638353C99AD47D806 /* Pods-AnimatedWebPDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedWebPDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatedWebPDemo/Pods-AnimatedWebPDemo.release.xcconfig"; sourceTree = "<group>"; };
-		3211AB681F2F60AD00EA0143 /* angstybloom.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = angstybloom.webp; sourceTree = "<group>"; };
-		3211AB691F2F60AD00EA0143 /* BladeRunner.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = BladeRunner.webp; sourceTree = "<group>"; };
-		3211AB6A1F2F60AD00EA0143 /* coffee.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = coffee.webp; sourceTree = "<group>"; };
-		3211AB6B1F2F60AD00EA0143 /* Contact.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = Contact.webp; sourceTree = "<group>"; };
-		3211AB6C1F2F60AD00EA0143 /* drivemetodrink2.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = drivemetodrink2.webp; sourceTree = "<group>"; };
-		3211AB6D1F2F60AD00EA0143 /* GenevaDrive.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = GenevaDrive.webp; sourceTree = "<group>"; };
-		3211AB6E1F2F60AD00EA0143 /* ppitsmyluckyday.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = ppitsmyluckyday.webp; sourceTree = "<group>"; };
-		3211AB6F1F2F60AD00EA0143 /* SteamEngine.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = SteamEngine.webp; sourceTree = "<group>"; };
-		3211AB701F2F60AD00EA0143 /* tavilol.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = tavilol.webp; sourceTree = "<group>"; };
-		3211AB711F2F60AD00EA0143 /* twifight.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = twifight.webp; sourceTree = "<group>"; };
-		3211AB721F2F60AD00EA0143 /* welliwashungryandwhenyoucravehands.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = welliwashungryandwhenyoucravehands.webp; sourceTree = "<group>"; };
-		3211AB731F2F60AD00EA0143 /* world-cup-2014-42.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "world-cup-2014-42.webp"; sourceTree = "<group>"; };
 		3211AB821F2F624D00EA0143 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		3211AB831F2F624D00EA0143 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		3211AB841F2F624D00EA0143 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
@@ -55,6 +32,7 @@
 		3279190E1F04C0C400EF3FA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		327919111F04C0C400EF3FA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		327919131F04C0C400EF3FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32ED95CD1F2F7CBB0081E921 /* webp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = webp; sourceTree = "<group>"; };
 		45443BF2575F27F73E81DCAB /* Pods-AnimatedWebPDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedWebPDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatedWebPDemo/Pods-AnimatedWebPDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C883ED606193A46984C79E59 /* libPods-AnimatedWebPDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimatedWebPDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,25 +56,6 @@
 				306208F638353C99AD47D806 /* Pods-AnimatedWebPDemo.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		3211AB661F2F60AD00EA0143 /* webp */ = {
-			isa = PBXGroup;
-			children = (
-				3211AB681F2F60AD00EA0143 /* angstybloom.webp */,
-				3211AB691F2F60AD00EA0143 /* BladeRunner.webp */,
-				3211AB6A1F2F60AD00EA0143 /* coffee.webp */,
-				3211AB6B1F2F60AD00EA0143 /* Contact.webp */,
-				3211AB6C1F2F60AD00EA0143 /* drivemetodrink2.webp */,
-				3211AB6D1F2F60AD00EA0143 /* GenevaDrive.webp */,
-				3211AB6E1F2F60AD00EA0143 /* ppitsmyluckyday.webp */,
-				3211AB6F1F2F60AD00EA0143 /* SteamEngine.webp */,
-				3211AB701F2F60AD00EA0143 /* tavilol.webp */,
-				3211AB711F2F60AD00EA0143 /* twifight.webp */,
-				3211AB721F2F60AD00EA0143 /* welliwashungryandwhenyoucravehands.webp */,
-				3211AB731F2F60AD00EA0143 /* world-cup-2014-42.webp */,
-			);
-			path = webp;
 			sourceTree = "<group>";
 		};
 		327918F61F04C0C400EF3FA3 = {
@@ -130,7 +89,7 @@
 				3279190E1F04C0C400EF3FA3 /* Assets.xcassets */,
 				327919101F04C0C400EF3FA3 /* LaunchScreen.storyboard */,
 				327919131F04C0C400EF3FA3 /* Info.plist */,
-				3211AB661F2F60AD00EA0143 /* webp */,
+				32ED95CD1F2F7CBB0081E921 /* webp */,
 				327919021F04C0C400EF3FA3 /* Supporting Files */,
 			);
 			path = AnimatedWebPDemo;
@@ -213,21 +172,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3211AB751F2F60AD00EA0143 /* angstybloom.webp in Resources */,
 				327919121F04C0C400EF3FA3 /* LaunchScreen.storyboard in Resources */,
-				3211AB7D1F2F60AD00EA0143 /* tavilol.webp in Resources */,
-				3211AB771F2F60AD00EA0143 /* coffee.webp in Resources */,
-				3211AB761F2F60AD00EA0143 /* BladeRunner.webp in Resources */,
-				3211AB7C1F2F60AD00EA0143 /* SteamEngine.webp in Resources */,
-				3211AB801F2F60AD00EA0143 /* world-cup-2014-42.webp in Resources */,
-				3211AB7A1F2F60AD00EA0143 /* GenevaDrive.webp in Resources */,
-				3211AB7E1F2F60AD00EA0143 /* twifight.webp in Resources */,
-				3211AB781F2F60AD00EA0143 /* Contact.webp in Resources */,
 				3279190F1F04C0C400EF3FA3 /* Assets.xcassets in Resources */,
-				3211AB791F2F60AD00EA0143 /* drivemetodrink2.webp in Resources */,
-				3211AB7F1F2F60AD00EA0143 /* welliwashungryandwhenyoucravehands.webp in Resources */,
+				32ED95CE1F2F7CBB0081E921 /* webp in Resources */,
 				3279190D1F04C0C400EF3FA3 /* Main.storyboard in Resources */,
-				3211AB7B1F2F60AD00EA0143 /* ppitsmyluckyday.webp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
