@@ -6,9 +6,9 @@ target 'AnimatedWebPDemo' do
   # use_frameworks!
 
   # Pods for AnimatedWebPDemo
-  pod 'SDWebImage',  git:'git@github.com:rs/SDWebImage.git', :branch => 'master'
-  pod 'SDWebImage/WebP',  git:'git@github.com:rs/SDWebImage.git', :branch => 'master'
-  pod 'SDWebImage/GIF',  git:'git@github.com:rs/SDWebImage.git', :branch => 'master'
+  pod 'SDWebImage',  git:'git@github.com:dreampiggy/SDWebImage.git', :branch => 'feature_add_progressive_webp'
+  pod 'SDWebImage/WebP',  git:'git@github.com:dreampiggy/SDWebImage.git', :branch => 'feature_add_progressive_webp'
+  pod 'SDWebImage/GIF',  git:'git@github.com:dreampiggy/SDWebImage.git', :branch => 'feature_add_progressive_webp'
   pod 'YYImage', '~> 1.0'
   pod 'YYWebImage', '~> 1.0'
 

@@ -42,7 +42,7 @@
 
 @interface MasterViewController ()
 
-@property (nonatomic, strong) NSMutableArray<NSURL *> *objects;
+@property (nonatomic, strong) NSMutableArray<NSString *> *objects;
 
 @end
 
@@ -53,10 +53,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSArray<NSURL *> *webpURLs = [[NSBundle mainBundle] URLsForResourcesWithExtension:@"webp" subdirectory:@"webp"];
-    self.objects = [NSMutableArray array];
-    
-    [self.objects addObjectsFromArray:webpURLs];
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem.alloc initWithTitle:@"Clear Cache"
+                                                                            style:UIBarButtonItemStylePlain
+                                                                           target:self
+                                                                           action:@selector(flushCache)];
+//    NSArray<NSURL *> *webpURLs = [[NSBundle mainBundle] URLsForResourcesWithExtension:@"webp" subdirectory:@"webp"];
+//    self.objects = [NSMutableArray array];
+//    
+//    [self.objects addObjectsFromArray:webpURLs];
+    self.objects = [NSMutableArray arrayWithObjects:
+                @"http://assets.sbnation.com/assets/2512203/dogflops.gif",
+                @"https://raw.githubusercontent.com/liyong03/YLGIFImage/master/YLGIFImageDemo/YLGIFImageDemo/joy.gif",
+                @"http://www.ioncannon.net/wp-content/uploads/2011/06/test2.webp",
+                @"http://www.ioncannon.net/wp-content/uploads/2011/06/test9.webp",
+                @"http://littlesvr.ca/apng/images/SteamEngine.webp",
+                @"http://littlesvr.ca/apng/images/world-cup-2014-42.webp",
+                @"https://isparta.github.io/compare-webp/image/gif_webp/webp/2.webp",
+                @"https://nr-platform.s3.amazonaws.com/uploads/platform/published_extension/branding_icon/275/AmazonS3.png",
+                nil];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
@@ -109,7 +123,9 @@
     [cell.customImageView sd_setIndicatorStyle:UIActivityIndicatorViewStyleGray];
     
     cell.customTextLabel.text = [NSString stringWithFormat:@"Image #%ld", (long)indexPath.row];
-    [cell.customImageView sd_setImageWithURL:self.objects[indexPath.row]];
+    [cell.customImageView sd_setImageWithURL:[NSURL URLWithString:_objects[indexPath.row]]
+                            placeholderImage:placeholderImage
+                                     options:SDWebImageProgressiveDownload];
     return cell;
 }
 
@@ -119,7 +135,7 @@
     {
         self.detailViewController = [[DetailViewController alloc] init];
     }
-    NSURL *largeImageURL = self.objects[indexPath.row];
+    NSURL *largeImageURL = [NSURL URLWithString:self.objects[indexPath.row]];
     self.detailViewController.imageURL = largeImageURL;
     [self.navigationController pushViewController:self.detailViewController animated:YES];
 }
