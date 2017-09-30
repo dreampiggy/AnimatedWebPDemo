@@ -42,6 +42,7 @@ PODS:
     - YYImage
 
 DEPENDENCIES:
+  - FLAnimatedImage (~> 1.0)
   - SDWebImage (from `git@github.com:rs/SDWebImage.git`, branch `master`)
   - SDWebImage/GIF (from `git@github.com:rs/SDWebImage.git`, branch `master`)
   - SDWebImage/WebP (from `git@github.com:rs/SDWebImage.git`, branch `master`)
@@ -66,6 +67,6 @@ SPEC CHECKSUMS:
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
   YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
 
-PODFILE CHECKSUM: 0e4fc36f98d075db4fd5323ba4f1618a0a1cdc1a
+PODFILE CHECKSUM: 44f84bc4b8e6ac9b54445fc73b75b1418dacc44d
 
 COCOAPODS: 1.2.1

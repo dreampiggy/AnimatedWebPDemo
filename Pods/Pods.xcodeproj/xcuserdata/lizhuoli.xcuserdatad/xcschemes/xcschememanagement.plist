@@ -8,89 +8,39 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 		<key>Pods-AnimatedWebPDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>YYCache.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>YYImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>YYWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>libwebp.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>1942F542AF11E96E0DB210EF2D85BC27</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2F38E675E17CAE3F210B5BF173A818A2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3EA78CF1022F4E211244893C3CA5B245</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>51663602C2D26401446A75BB789FA9FE</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>53F8571E2D572C4069860E38654A566A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>59922E59DAC4B07751AFF858D35DCD85</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FB6F7635FB13EEAE9014EE007FE8B0B7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

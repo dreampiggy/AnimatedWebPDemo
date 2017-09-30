@@ -9,6 +9,7 @@ target 'AnimatedWebPDemo' do
   pod 'SDWebImage',  git:'git@github.com:rs/SDWebImage.git', :branch => 'master'
   pod 'SDWebImage/WebP',  git:'git@github.com:rs/SDWebImage.git', :branch => 'master'
   pod 'SDWebImage/GIF',  git:'git@github.com:rs/SDWebImage.git', :branch => 'master'
+  pod 'FLAnimatedImage', '~> 1.0'
   pod 'YYImage', '~> 1.0'
   pod 'YYWebImage', '~> 1.0'
 
