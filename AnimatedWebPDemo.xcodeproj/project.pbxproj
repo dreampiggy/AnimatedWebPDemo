@@ -145,6 +145,7 @@
 				TargetAttributes = {
 					327918FE1F04C0C400EF3FA3 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = H7W77QXGX2;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -360,6 +361,7 @@
 			baseConfigurationReference = 45443BF2575F27F73E81DCAB /* Pods-AnimatedWebPDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H7W77QXGX2;
 				INFOPLIST_FILE = AnimatedWebPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreampiggy.AnimatedWebPDemo;
@@ -372,6 +374,7 @@
 			baseConfigurationReference = 306208F638353C99AD47D806 /* Pods-AnimatedWebPDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H7W77QXGX2;
 				INFOPLIST_FILE = AnimatedWebPDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dreampiggy.AnimatedWebPDemo;
